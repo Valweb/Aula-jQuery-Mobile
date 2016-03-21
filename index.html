@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+	<!-- Essa meta transforma o formato para mobile -->
+	<title>JQuery Mobile - Macoratti.net</title>
+
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css">
+	<script  src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script  src="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+</head>
+<body>
+	<div data-role="roler">
+		<h2> Exemplo de Listas</h2>
+	</div>	
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">Artigos</li>
+			<li><a href="#JQM">JQuery Mobile</a></li>
+			<li><a href="#delphi">Delphi</a></li>
+			<li data-role="list-divider">Curso em andamento</li>
+			<li><a href="#html">HTML</a></li>
+			<li><a href="JavaScript">Javascript</a></li>
+		</ul>
+			</br>
+			<h3> Exemplo de Check Box</h3>
+			<form>
+			    <fieldset data-role="controlgroup">
+			        
+			        <input name="checkbox-v-2a" id="checkbox-v-2a" type="checkbox">
+			        <label for="checkbox-v-2a">One</label>
+			        <input name="checkbox-v-2b" id="checkbox-v-2b" type="checkbox">
+			        <label for="checkbox-v-2b">Two</label>
+			        <input name="checkbox-v-2c" id="checkbox-v-2c" type="checkbox">
+			        <label for="checkbox-v-2c">Three</label>
+			    </fieldset>	
+			</form>
+			</br>
+			<h3> Exemplo de Radio Button</h3>
+			<form>	
+				<fieldset data-role="Controlgroup" data-type="horizontal" >
+			
+					<legend>Escolha uma opção:</legend>
+					<input name="radio-choice-h-2" id="radio-choice-h-2a" value="on"checked="checked" type="radio">
+					<label for="radio-choice-h-2a">Opção Um</label>
+
+					<input name="radio-choice-h-2" id="radio-choice-h-2b" value="off"checked="off" type="radio">
+					<label for="radio-choice-h-2b"> Opção Dois</label>
+
+					<input name="radio-choice-h-2" id="radio-choice-h-2c" value="off"checked="other" type="radio">
+					<label for="radio-choice-h-2c">Opção Três</label>
+				</fieldset> 	
+			</form>	
+
+			</br>
+				<h3> Exemplo Transição de páginas</h3>	
+			<ul data-role="listview" data-inset="true">
+                <li><a href="pag1.html" target="new">Página de transição</a></li>
+			</ul>				
+			</div>	
+			</br>
+			<h3> Exemplo de Themas</h3>	
+			<form>
+			    <input value="Input - Inherit" type="button">
+			    <input data-theme="a" value="Input - Theme swatch A" type="button">
+			    <input data-theme="b" value="Input - Theme swatch B" type="button">
+			    <div class="ui-input-btn ui-btn">
+			        Enhanced - Inherit
+			        <input data-enhanced="true" value="Enhanced - Inherit" type="button">
+			    </div>
+			    <div class="ui-input-btn ui-btn ui-btn-a">
+			        Enhanced - Theme swatch A
+			        <input data-enhanced="true" value="Enhanced - Theme swatch A" type="button">
+			    </div>
+			    <div class="ui-input-btn ui-btn ui-btn-b">
+			        Enhanced - Theme swatch B
+			        <input data-enhanced="true" value="Enhanced - Theme swatch B" type="button">
+			    </div>
+			</form>
+		
+
+
+		<div data-role="footer">Rodapé </div>
+	</body>
+</html>

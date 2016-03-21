@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>	
+	<!-- Essa meta transforma o formato para mobile -->
+	<title>Inforium</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css">
+	<script  src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script  src="https://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+</head>
+<body>
+		<div data-role="page" id="principal">
+			<div data-role="header">
+				<h1> Cabeçalho - Página principal.</h1>				
+			</div>	
+			<div data-role="content">
+				<p> multipágina jQuery Mobile </p>
+				<p> Ir página 2 <a href="#pagina2"> Segunda Página </a></p>
+				<p> Ir página 3 - Escolha no Radio Buttons<a href="#pagina3" data-rel="dialog"> Terceira Página </a></p>		
+			</div>
+
+	
+			 <a href="index.html" class="ui-btn ui-btn-iniline"  target="new">Voltar</a>
+			
+
+
+			<div data-role="footer">
+			Rodapé
+			</div>
+		</div>
+		<div data-role="page" id="pagina2" data-title="Exemplo pagina 2">
+			<div data-role="header">
+				<h1> Exemplo Página 2</h1>
+			</div>	
+
+			<div data-role="content">
+				<p> com esse exemplo podemos ver as multipáginas</p>
+				<p> <a href="#principal">Voltar</a></p>
+			</div>
+			<div data-role="footer">
+			Rodapé
+			</div>
+		</div>
+
+		<div data-role="page" id="pagina3" data-title="Exemplo pagina 3">
+			<div data-role="header">
+				<h1> Exemplo Página 3</h1>
+			</div>	
+
+		 <div data-role="content">
+				<p> Página 3 </p>
+				
+			<form>	
+				<fieldset data-role="Controlgroup" data-type="horizontal" >
+			
+					<legend>Escolha uma opção no Radio Horizontal:</legend>
+					<input name="radio-choice-h-2" id="radio-choice-h-2a" value="on"checked="checked" type="radio">
+					<label for="radio-choice-h-2a">Opção Um</label>
+
+					<input name="radio-choice-h-2" id="radio-choice-h-2b" value="off"checked="off" type="radio">
+					<label for="radio-choice-h-2b"> Opção Dois</label>
+
+					<input name="radio-choice-h-2" id="radio-choice-h-2c" value="off"checked="other" type="radio">
+					<label for="radio-choice-h-2c">Opção Três</label>
+				</fieldset> 	
+			</form>
+				<p> <a href="#principal">Voltar</a></p>
+		 </div>
+		</div>
+			<div data-role="footer">
+			Rodapé
+			</div>
+		</div>	
+		
+
+
+	</body>
+</html>
